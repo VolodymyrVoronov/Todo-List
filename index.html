@@ -24,7 +24,13 @@
     <footer class="main-footer">
       <form action="" class="add-task">
         <p class="add-task__title">Add a new task to do...</p>
-        <input value="" type="text" class="add-task__input-field" placeholder="add a new task and press the enter button..." minlength="0" maxlength="40" required>
+        <input value="" type="text" class="add-task__input-field" placeholder="add a new task and press the enter button..." minlength="0" maxlength="45" required>
+        <select class="add-task__priority" name="priority" id="">
+          <option value="1">Low</option>
+          <option value="2">Middle</option>
+          <option value="3">High</option>
+        </select>
+        <button class="add-task__btn" type="button">Add task</button>
       </form>
     </footer>
   </div>

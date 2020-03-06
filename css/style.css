@@ -106,7 +106,7 @@ body {
 
 .todos__text {
   display: block;
-  width: 300px;
+  width: 355px;
   margin: 0;
   padding: 0;
 
@@ -117,41 +117,28 @@ body {
   color: #000000;
 }
 
-.importance {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100px;
-}
-
-.importance__item {
-  display: block;
-  margin: 0;
-  padding: 0;
-  
-  list-style: none;
-  text-decoration: none;
-}
-
-.importance__value {
-  position: relative;
+.todos__importance {
   display: block;
   width: 30px;
   height: 30px;
   margin: 0;
   padding: 0;
-
-  background-color: lightyellow;
   border-radius: 50%;
-  cursor: pointer;
-  z-index: 10;
+  border: 1px solid #000000;
 }
 
-.importance__checkbox {
-  display: none;
+.todos__importance--low {
+  background-color: #96d243;
 }
 
-.todo__delete-btn {
+.todos__importance--middle {
+  background-color: #ffbc26;
+}
+.todos__importance--high {
+  background-color: #ff2a36;
+}
+
+.todos__delete-btn {
   display: block;
   width: 30px;
   height: 30px;
@@ -210,17 +197,48 @@ body {
   border: none;
 }
 
+.add-task__priority {
+  display: block;
+  margin: 0;
+  margin-top: 10px;
+  padding: 5px 10px;
+
+  font-family: 'Open Sans', 'Arial',  sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #000000;
+
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-task__btn {
+  display: block;
+  margin: 0;
+  margin-top: 10px;
+  padding: 5px 10px;
+
+  font-family: 'Open Sans', 'Arial',  sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-task__btn:hover {
+  background-color: lightgray;
+}
+
+.add-task__btn:active {
+  background-color: darkgray;
+}
+
 .hidden {
   display: none;
-}
-
-.color-low {
-  background-color: #96d243;
-}
-
-.color-middle {
-  background-color: #ffbc26;
-}
-.color-high {
-  background-color: #ff2a36;
 }
