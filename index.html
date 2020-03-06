@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Todo List</title>
+</head>
+<body>
+  <div class="container">
+    <header class="main-header">
+      <h1 class="main-header__title">Todo List</h1>
+      <form action="" class="search">
+        <input type="text" class="search__input" name="search" placeholder="search task...">
+      </form>
+    </header>
+    <main class="main-content">
+      <ul class="todos">
+      </ul>
+    </main>
+    <footer class="main-footer">
+      <form action="" class="add-task">
+        <p class="add-task__title">Add a new task to do...</p>
+        <input value="" type="text" class="add-task__input-field" placeholder="add a new task and press the enter button..." minlength="0" maxlength="40" required>
+      </form>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
