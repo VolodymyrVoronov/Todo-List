@@ -1,4 +1,4 @@
-## Todo-List
+# Todo-List
 
 The project online [here](https://volodymyrvoronov.github.io/Todo-List/).
 
